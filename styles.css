@@ -1,0 +1,105 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif; /* Ensure Arial fallback for better control */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light background for better readability */
+  }
+  
+  header, footer {
+    background-color: #282c34; /* Darker header/footer for contrast */
+    color: white;
+    text-align: center;
+    padding: 0.5em 0; /* Increased padding for better spacing */
+  }
+  
+  a {
+    color: #7c85db;
+    font-size: 18px; /* Smaller font size for better hierarchy */
+    padding: 0.5em 1em; /* Add slight padding for visual separation */
+    text-decoration: none;
+    display: inline-block; /* Allow inline elements within links */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle hover background */
+    color: white;
+  }
+  
+  header {
+    flex-shrink: 0;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
+  main {
+    padding: 2em; /* More generous padding for content area */
+  }
+  
+  h1 {
+    color: #d2d4d9;
+    font-size: 2.5em; /* Larger headings for emphasis */
+    margin-bottom: 1em;
+  }
+  
+  h2 {
+    color: #0c0d1c;
+    font-size: 1.8em; /* Balanced heading sizes for hierarchy */
+    margin-bottom: 0.8em;
+  }
+  
+  .goal {
+    margin-bottom: 2em;
+  }
+  
+  ul {
+    padding-left: 1.5em; /* Consistent, slight padding for lists */
+  }
+  
+  p {
+    font-weight: bold; /* Default weight for body text */
+    line-height: 1.5; /* Improved readability with line spacing */
+  }
+  
+  #profile img {
+    width: 1280px; /* Maintain responsive behavior */
+    height: 1280px;
+    margin: 0 auto;
+    border-radius: 50%; /* Add subtle rounded corners for visual interest */
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      padding: 0 1.5em;
+    }
+  
+    header, footer {
+      padding: 1em;
+    }
+  
+    main {
+      padding: 1em 0;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.1em; /* Adjust heading sizes for smaller screens */
+    }
+  
+    #profile img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  

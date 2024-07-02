@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Tech Goals</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>About Me</h2>
+            <p>Slack Display Name: <span data-testid="slackDisplayName">Ahmed_Dabour</span></p>
+            <p>Slack Email: <span data-testid="slackEmail">ahmedmahmouddabour@gmail.com</span></p>
+            <p>Current Time (UTC): <span data-testid="currentTimeUTC" id="currentTime"></span></p>
+            <p>Current Day: <span data-testid="currentDay" id="currentDay"></span></p>
+            <img src="images/profile.jpg" alt="Profile Picture" data-testid="slackProfilePicture" id="profileImage">
+        </section>
+        <section id="goals">
+            <h2>My Tech Goals for the Next 2 Years</h2>
+            <section id="year1">
+                <h2>Year 1 Goals</h2>
+                <div class="goal">
+                    <h3>1. Master Advanced Backend Development</h3>
+                    <ul>
+                        <li><strong>Deep Dive into Node.js and Express:</strong> Enhance my expertise in Node.js and Express by building complex, scalable applications. I aim to contribute to open-source projects to gain real-world experience.</li>
+                        <li><strong>Microservices Architecture:</strong> Learn and implement microservices architecture using Docker and Kubernetes. This involves understanding service discovery, load balancing, and inter-service communication.</li>
+                        <li><strong>Database Mastery:</strong> Gain advanced knowledge in SQL (PostgreSQL) and NoSQL (MongoDB) databases. Focus on performance optimization, indexing strategies, and understanding database internals.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>2. Full-Stack Development Proficiency</h3>
+                    <ul>
+                        <li><strong>Frontend Frameworks:</strong> Master React.js, focusing on building dynamic, responsive, and high-performance web applications. Learn best practices for state management (Redux, Context API), and performance optimization.</li>
+                        <li><strong>Responsive Design and UX:</strong> Improve my skills in CSS (including frameworks like Tailwind CSS) and UX principles to create visually appealing and user-friendly interfaces.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>3. Cloud Computing and DevOps</h3>
+                    <ul>
+                        <li><strong>AWS Certification:</strong> Achieve AWS Certified Solutions Architect – Associate certification. Gain hands-on experience with services like EC2, S3, Lambda, RDS, and CloudFormation.</li>
+                        <li><strong>CI/CD Pipelines:</strong> Set up continuous integration and continuous deployment pipelines using tools like Jenkins, GitHub Actions, and CircleCI to automate the software development lifecycle.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>4. Contribution to Open Source</h3>
+                    <ul>
+                        <li><strong>GitHub Contributions:</strong> Regularly contribute to open-source projects. This will help me learn from the community, improve my coding standards, and build a strong portfolio.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>5. Leadership and Mentorship</h3>
+                    <ul>
+                        <li><strong>Technical Blogging:</strong> Start a technical blog to document my learning journey, share knowledge, and contribute to the developer community.</li>
+                        <li><strong>Mentorship:</strong> Mentor junior developers through coding bootcamps, online platforms (like Codecademy or freeCodeCamp), and local meetups.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="year2">
+                <h2>Year 2 Goals</h2>
+                <div class="goal">
+                    <h3>1. Specialization in Artificial Intelligence and Machine Learning</h3>
+                    <ul>
+                        <li><strong>Machine Learning Courses:</strong> Complete online courses in machine learning and deep learning (e.g., Coursera's Machine Learning by Andrew Ng, Deep Learning Specialization).</li>
+                        <li><strong>Practical Projects:</strong> Work on practical ML projects, including natural language processing (NLP) and computer vision applications. Implement models using TensorFlow and PyTorch.</li>
+                        <li><strong>AI Research:</strong> Stay updated with the latest AI research papers and trends. Participate in AI competitions on platforms like Kaggle to apply theoretical knowledge in practical scenarios.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>2. Scalable System Design and Architecture</h3>
+                    <ul>
+                        <li><strong>High Scalability and Performance:</strong> Learn advanced system design principles for building highly scalable and fault-tolerant systems. Understand load balancing, caching strategies, and distributed systems concepts.</li>
+                        <li><strong>Big Data Technologies:</strong> Gain proficiency in big data technologies like Apache Hadoop, Spark, and Kafka. Learn to process and analyze large datasets efficiently.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>3. Cybersecurity Expertise</h3>
+                    <ul>
+                        <li><strong>Security Best Practices:</strong> Learn and implement best practices for securing web applications and APIs. Focus on areas like encryption, authentication, authorization, and secure coding practices.</li>
+                        <li><strong>Certifications:</strong> Aim for security certifications such as Certified Information Systems Security Professional (CISSP) or Certified Ethical Hacker (CEH) to validate my knowledge and skills in cybersecurity.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>4. Community Engagement and Speaking</h3>
+                    <ul>
+                        <li><strong>Tech Conferences and Meetups:</strong> Attend and speak at tech conferences and meetups. Share my knowledge on topics like backend development, cloud computing, and AI.</li>
+                        <li><strong>Technical Workshops:</strong> Conduct workshops and webinars to teach specific technical skills, such as building microservices, implementing CI/CD pipelines, or developing ML models.</li>
+                    </ul>
+                </div>
+                <div class="goal">
+                    <h3>5. Entrepreneurial Ventures</h3>
+                    <ul>
+                        <li><strong>Startup Experience:</strong> Gain experience working in or founding a tech startup. Focus on product development, user acquisition, and scaling the business.</li>
+                        <li><strong>Innovative Projects:</strong> Work on innovative projects that solve real-world problems. This could involve developing new software tools, contributing to impactful open-source projects, or collaborating with cross-functional teams to bring new ideas to life.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section id="links">
+            <h2>Useful Links</h2>
+            <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a>
+            <a href="https://keyword.dog" target="_blank" data-testid="keywordLink">Keyword Dog</a>
+            <a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">Scrape Any Web</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ahmed Dabour</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
